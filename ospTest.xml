@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ServiceList xmlns="urn:dvb:metadata:servicediscovery:2025" xml:lang="en" xmlns:mpeg7="urn:tva:mpeg7:2008" xmlns:dvbisd="urn:dvb:metadata:servicediscovery:2025" xmlns:dvbi-types="urn:dvb:metadata:servicediscovery-types:2025" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:dvb:metadata:servicediscovery:2025 ./dvbi_v7.0-with-hls-hbbtv.xsd"  xmlns:tva="urn:tva:metadata:2024" responseStatus="OK" version="1" id="tag:onscreenpublishing.com,2024:ospTest">
+    <StandardVersion>urn:dvb:metadata:dvbi:standardversion:7</StandardVersion>
+    <Name xml:lang="en">OSP Test</Name>
+    <ProviderName xml:lang="en">OnScreen Publishing</ProviderName>
+    <RelatedMaterial>
+        <tva:HowRelated href="urn:dvb:metadata:cs:LinkedApplicationCS:2019:4.1"/>
+        <tva:MediaLocator>
+            <tva:MediaUri contentType="application/vnd.dvb.ait+xml">https://dev.onscreenpublisher.co.uk/dvb-i/api/ait/ait.php?id=23&amp;launcherType=ServiceList&amp;launcherName=OSP+Test&amp;appType=installationAgreementApplication</tva:MediaUri>
+        </tva:MediaLocator>
+        <tva:AccessibilityAttributes/>
+    </RelatedMaterial>
+    <RelatedMaterial>
+        <tva:HowRelated href="urn:dvb:metadata:cs:LinkedApplicationCS:2019:4.1"/>
+        <tva:MediaLocator>
+            <tva:MediaUri contentType="application/xhtml+xml">https://dtgtesting2.onscreenpublisher.co.uk/home.php?id=64&amp;platform=iPadWeb&amp;role=installation&amp;launcherType=ServiceList&amp;launcherName=OSP+Test&amp;contentType=application%2Fxhtml%2Bxml</tva:MediaUri>
+        </tva:MediaLocator>
+        <tva:AccessibilityAttributes/>
+    </RelatedMaterial>
+    <RelatedMaterial>
+        <tva:HowRelated href="urn:dvb:metadata:cs:LinkedApplicationCS:2019:4.2"/>
+        <tva:MediaLocator>
+            <tva:MediaUri contentType="application/vnd.dvb.ait+xml">https://dev.onscreenpublisher.co.uk/dvb-i/api/ait/ait.php?id=24&amp;launcherType=ServiceList&amp;launcherName=OSP+Test&amp;appType=withdrawalOfAgreementApplication</tva:MediaUri>
+        </tva:MediaLocator>
+        <tva:AccessibilityAttributes/>
+    </RelatedMaterial>
+    <RelatedMaterial>
+        <tva:HowRelated href="urn:dvb:metadata:cs:LinkedApplicationCS:2019:4.2"/>
+        <tva:MediaLocator>
+            <tva:MediaUri contentType="application/xhtml+xml">https://dtgtesting2.onscreenpublisher.co.uk/home.php?id=64&amp;platform=iPadWeb&amp;role=withdrawal&amp;launcherType=ServiceList&amp;launcherName=OSP+Test&amp;contentType=application%2Fxhtml%2Bxml</tva:MediaUri>
+        </tva:MediaLocator>
+        <tva:AccessibilityAttributes/>
+    </RelatedMaterial>
+    <RelatedMaterial>
+        <tva:HowRelated href="urn:dvb:metadata:cs:LinkedApplicationCS:2019:4.3"/>
+        <tva:MediaLocator>
+            <tva:MediaUri contentType="application/vnd.dvb.ait+xml">https://dev.onscreenpublisher.co.uk/dvb-i/api/ait/ait.php?id=25&amp;launcherType=ServiceList&amp;launcherName=OSP+Test&amp;appType=renewalOfAgreementApplication</tva:MediaUri>
+        </tva:MediaLocator>
+        <tva:AccessibilityAttributes/>
+    </RelatedMaterial>
+    <RelatedMaterial>
+        <tva:HowRelated href="urn:dvb:metadata:cs:LinkedApplicationCS:2019:4.3"/>
+        <tva:MediaLocator>
+            <tva:MediaUri contentType="application/xhtml+xml">https://dtgtesting2.onscreenpublisher.co.uk/home.php?id=64&amp;platform=iPadWeb&amp;role=renewal&amp;launcherType=ServiceList&amp;launcherName=OSP+Test&amp;contentType=application%2Fxhtml%2Bxml</tva:MediaUri>
+        </tva:MediaLocator>
+        <tva:AccessibilityAttributes/>
+    </RelatedMaterial>
+    <SubscriptionPackageList>
+        <SubscriptionPackage>DVB test</SubscriptionPackage>
+    </SubscriptionPackageList>
+    <LCNTableList>
+        <LCNTable preserveBroadcastLCN="true">
+            <LCN channelNumber="1" serviceRef="tag:onscreenpublishing.com,2025:ospTest1"/>
+            <LCN channelNumber="2" serviceRef="tag:onscreenpublishing.com,2025:drmTest"/>
+            <LCNRange start="100" end="199" priority="1" fillMethod="fillGaps" serviceOrigin="dvbi" serviceType="urn:dvb:metadata:cs:ServiceTypeCS:2019:tv" serviceGenre="urn:dvb:metadata:cs:ContentSubject:2019:6.6"/>
+            <LCNRange start="200" end="299" priority="2" fillMethod="startFromHighest" serviceOrigin="targetBroadcast" serviceType="urn:dvb:metadata:cs:ServiceTypeCS:2019:tv" serviceGenre="urn:dvb:metadata:cs:ContentSubject:2019:5.5"/>
+        </LCNTable>
+    </LCNTableList>
+    <Service xml:lang="en" version="1">
+        <UniqueIdentifier>tag:onscreenpublishing.com,2025:ospTest1</UniqueIdentifier>
+        <ServiceInstance priority="1">
+            <DisplayName xml:lang="en">Puno to Cusco train ride - DASH Livesim2</DisplayName>
+            <ContentProtection>
+                <DRMSystemId encryptionScheme="cenc" cpsIndex="1">9a04f079-9840-4286-ab92-e65be0885f95</DRMSystemId>
+                <DRMSystemId encryptionScheme="cenc" cpsIndex="2">edef8ba9-79d6-4ace-a3c8-27dcd51d21ed</DRMSystemId>
+            </ContentProtection>
+            <SubscriptionPackage>DVB test</SubscriptionPackage>
+            <DASHDeliveryParameters>
+                <UriBasedLocation contentType="application/dash+xml">
+                    <URI>https://dev.onscreenpublisher.co.uk:8888/livesim2/Puno_to_Cusco_train_journey_1920x1080/manifest.mpd</URI>
+                </UriBasedLocation>
+            </DASHDeliveryParameters>
+            <CMCD CMCDversion="7">
+                <Report reportingMode="urn:dvb:metadata:cmcd:delivery:request" transmissionMode="urn:dvb:metadata:cmcd:delivery:customHTTPHeader" reportingMethod="POST" contentId="xxx" enabledKeys="yyy" probability="999"/>
+            </CMCD>
+        </ServiceInstance>
+        <ServiceName xml:lang="en">Puno to Cusco train ride</ServiceName>
+        <ProviderName xml:lang="en">OnScreen Publishing</ProviderName>
+        <RelatedMaterial>
+            <tva:HowRelated href="urn:dvb:metadata:cs:HowRelatedCS:2021:1001.2"/>
+            <tva:MediaLocator contentLanguage="en">
+                <tva:MediaUri contentType="image/png">https://dev.onscreenpublisher.co.uk/dvb-i/api/imagePath/3182/default/png/Puno+to+Cusco+train+ride/service%2Ben/Puno+to+Cusco+train+ride</tva:MediaUri>
+            </tva:MediaLocator>
+        </RelatedMaterial>
+        <ServiceType href="urn:dvb:metadata:cs:ServiceTypeCS:2019:linear"/>
+    </Service>
+    <Service xml:lang="en" version="1">
+        <UniqueIdentifier>tag:onscreenpublishing.com,2025:drmTest</UniqueIdentifier>
+        <ServiceInstance priority="1">
+            <DisplayName xml:lang="en">OSP DRM Test - DASH 1</DisplayName>
+            <ContentProtection>
+                <DRMSystemId encryptionScheme="cenc" cpsIndex="1">9a04f079-9840-4286-ab92-e65be0885f95</DRMSystemId>
+                <DRMSystemId encryptionScheme="cenc" cpsIndex="2">edef8ba9-79d6-4ace-a3c8-27dcd51d21ed</DRMSystemId>
+            </ContentProtection>
+            <SubscriptionPackage>DVB test</SubscriptionPackage>
+            <DASHDeliveryParameters>
+                <UriBasedLocation contentType="application/dash+xml">
+                    <URI>https://media.axprod.net/TestVectors/Cmaf/protected_1080p_h264_cbcs/manifest.mpd</URI>
+                </UriBasedLocation>
+            </DASHDeliveryParameters>
+        </ServiceInstance>
+        <ServiceName xml:lang="en">OSP DRM Test</ServiceName>
+        <ProviderName xml:lang="en">OnScreen Publishing</ProviderName>
+        <RelatedMaterial>
+            <tva:HowRelated href="urn:dvb:metadata:cs:HowRelatedCS:2021:1001.2"/>
+            <tva:MediaLocator contentLanguage="en">
+                <tva:MediaUri contentType="image/png">https://dev.onscreenpublisher.co.uk/dvb-i/api/imagePath/3182/default/png/OSP+DRM+Test/service%2Ben/OSP+DRM+Test</tva:MediaUri>
+            </tva:MediaLocator>
+        </RelatedMaterial>
+        <ServiceType href="urn:dvb:metadata:cs:ServiceTypeCS:2019:linear"/>
+    </Service>
+</ServiceList>
